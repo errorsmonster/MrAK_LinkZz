@@ -60,7 +60,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 
 #Shortner Variables 
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MrAK_LinkZz/5')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'krownlinks.com')
