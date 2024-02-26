@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22225617'))
 API_HASH = environ.get('API_HASH', 'ef16f7597376f1689663304c954e4493')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7033707454:AAHuwVWAmY3Mcx5_Ddp-F82BJH4Oxxzu-ro")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6735601854:AAFDIMRIpSvHCoC4VI_czK6HKtt85jKwr94")
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'krownlinks.com'))
@@ -48,7 +48,7 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001955218723')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001842834681')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002141251057')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
@@ -65,7 +65,7 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MrAK_LinkZz/5')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'krownlinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '274bdc3b7ff8982f5a0167edf2034f40ddc52d15')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #others 
 
