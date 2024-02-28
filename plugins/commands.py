@@ -348,36 +348,21 @@ async def start(client, message):
                     f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
-            user_id = message.from_user.id
-            user_verified = await db.is_user_verified(user_id)
-            is_second_shortener = await db.use_second_shortener(user_id)
-            how_to_download_link = TUTORIAL_LINK_2 if is_second_shortener else TUTORIAL_LINK_1
-            if not await db.has_premium_access(user_id):
-                if not user_verified or is_second_shortener and VERIFY == True:
-                    verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
-                    await db.create_verify_id(user_id, verify_id)
-                    btn = [[
-                        InlineKeyboardButton(text="♻️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪꜰʏ ♻️", url=await get_verify_shortlink(f"https://telegram.me/{temp.U_NAME}?start=verify_{user_id}_{verify_id}", is_second_shortener))
-                    ], [
-                        InlineKeyboardButton(text="⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=how_to_download_link)
-                    ]]
-                    bin_text = script.SECOND_VERIFICATION_TEXT if is_second_shortener else script.VERIFICATION_TEXT
-                    reply_markup = InlineKeyboardMarkup(btn)
-                    dlt = await message.reply_text(
-                        text=bin_text.format(message.from_user.mention),
-                        reply_markup=reply_markup,
-                        parse_mode=enums.ParseMode.HTML
-                    )
-                    await asyncio.sleep(120)
-                    await dlt.delete()
-                    await message.delete()
-                    return
-            else:
-                pass
-            msg = await client.send_cached_media(
-                chat_id=message.from_user.id,
-                file_id=file_id,
-                caption=f_caption,
+            if not await check_verification(client, message.from_user.id) and VERIFY == True:
+        btn = [[
+            InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+            InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url='https://t.me/cccgffddff/9')            
+        ]]
+        await message.reply_text(
+            text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
+            protect_content=True,
+            reply_markup=InlineKeyboardMarkup(btn)
+        )
+        return
+    msg = await client.send_cached_media(
+        chat_id=message.from_user.id,
+        file_id=file_id,
+        caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=(
                     InlineKeyboardMarkup(
