@@ -151,7 +151,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     else:
         btn = []
@@ -164,7 +164,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     try:
         if settings['max_btn']:
@@ -380,7 +380,7 @@ f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     else:
         btn = []
@@ -395,7 +395,7 @@ f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     if offset != "":
         try:
@@ -536,7 +536,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     else:
         btn = []
@@ -549,7 +549,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
 
     if offset != "":
@@ -714,7 +714,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK),
             InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
         ])
     else:
@@ -728,7 +728,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
         
     offset = 0
@@ -1474,17 +1474,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ],[
-            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-            
-            InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
-        ],[
-            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('☞ Uᴘᴅᴀᴛᴇꜱ', callback_data='main_channel') 
-        ],[
-            InlineKeyboardButton('💰 Buy Premium for adz Free Movies ✅', callback_data='buy_premium')
-        ]]
+                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🦋 ᴜᴘᴅᴀᴛᴇ 🍂', callback_data='main_channel'),
+                    InlineKeyboardButton('🫨 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ✨', url=GRP_LNK)
+                ],[
+                    InlineKeyboardButton('👻 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('👾 ᴀʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data="shortlink_info")
+                ],[
+                    InlineKeyboardButton('💰 Buy Premium for adz Free Movies ✅', callback_data='buy_premium')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1679,7 +1680,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Contact', url='https://t.me/leotgadmin_bot')
+            InlineKeyboardButton('Contact', url='https://t.me/I_Am_MrAK')
         ]] 
         await client.edit_message_media(
             query.message.chat.id, 
@@ -2049,7 +2050,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("👨‍💻 Contact", url='https://t.me/leotgadmin_bot')  
+                    InlineKeyboardButton("👨‍💻 Contact", url='https://t.me/I_Am_MrAK')  
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2228,7 +2229,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     else:
         btn = []
@@ -2241,7 +2242,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📍 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗢𝗻𝗲 𝗟𝗶𝗻𝗸 📍", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
@@ -2350,7 +2351,7 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             m=await message.reply_text("🔎") 
-            fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
                 if settings['auto_delete']:
@@ -2363,7 +2364,7 @@ async def auto_filter(client, msg, spoll=False):
                 await fek.delete()
                 await message.delete()
     else:
-        fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
+        fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await m.delete()
         try:
             if settings['auto_delete']:
