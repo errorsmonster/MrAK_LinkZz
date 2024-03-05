@@ -15,14 +15,14 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22225617'))
 API_HASH = environ.get('API_HASH', 'ef16f7597376f1689663304c954e4493')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7039192360:AAHBT7iyF3qkJFLB46pZWzUpo7AE7ZUGkGY")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7033707454:AAHuwVWAmY3Mcx5_Ddp-F82BJH4Oxxzu-ro")
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'krownlinks.com'))
 STREAM_API = (environ.get('STREAM_API', '274bdc3b7ff8982f5a0167edf2034f40ddc52d15'))
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002122060084'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002141251057'))
 
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/a36b4b70f61796cfb8d5d.jpg'))
 CODE = (environ.get('CODE', 'https://graph.org/file/f96562518138b9132abf8.jpg'))
@@ -54,8 +54,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://errorsmonster:S.Aruna1155182089@mrak.rrncwi8.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "mrak")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akmonsterprogrammer:S.Aruna1155182089@test.zyj7rhx.mongodb.net/?retryWrites=true&w=majority&appName=test")
+DATABASE_NAME = environ.get('DATABASE_NAME', "test")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 
@@ -76,7 +76,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+1xujDl3NzN02N2Jl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MrAK_LinkZz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002053122232'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002141251057'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+1xujDl3NzN02N2Jl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
