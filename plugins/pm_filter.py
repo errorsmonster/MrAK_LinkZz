@@ -1443,8 +1443,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 disable_web_page_preview=True,                  
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='buy_premium')]]))
                 buttons = [[
-                    InlineKeyboardButton("🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=hp_link),
-                    InlineKeyboardButton("💻 Wᴀᴛᴄʜ Oɴʟɪɴᴇ 💻", url=ph_link)
+                    InlineKeyboardButton("🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=lazy_download),
+                    InlineKeyboardButton("💻 Wᴀᴛᴄʜ Oɴʟɪɴᴇ 💻", url=lazy_stream)
                 ]]
 
             query.message.reply_markup = query.message.reply_markup or []
