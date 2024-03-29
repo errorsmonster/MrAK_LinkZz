@@ -151,7 +151,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     else:
         btn = []
@@ -164,7 +164,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     try:
         if settings['max_btn']:
@@ -380,7 +380,7 @@ f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     else:
         btn = []
@@ -395,7 +395,7 @@ f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     if offset != "":
         try:
@@ -536,7 +536,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     else:
         btn = []
@@ -549,7 +549,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
 
     if offset != "":
@@ -714,7 +714,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK),
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM),
             InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
         ])
     else:
@@ -728,7 +728,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
         
     offset = 0
@@ -1430,22 +1430,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = []
             if await db.has_premium_access(user_id):                               
                 buttons = [[
-                    InlineKeyboardButton("🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=lazy_download),
-                    InlineKeyboardButton("💻 Wᴀᴛᴄʜ Oɴʟɪɴᴇ 💻", url=lazy_stream)
-                ],[
-                    InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url='https://t.me/Teamriouptades3')
-                ]]
+                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)
+                ], [
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]
             else:
-                await query.answer("🚸 ɴᴏᴛᴇ :\nᴀᴅ-ꜰʀᴇᴇ ꜱᴇʀᴠɪᴄᴇ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴄʜᴇᴄᴋ ᴘʟᴀɴꜱ.", show_alert=True)
-                await query.message.reply_text(
-                text="<b>‼️ ᴡᴀɴᴛ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ?\n\n✅ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ᴇɴᴊᴏʏ ᴀᴅ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ.</b>",
-                quote=True,
-                disable_web_page_preview=True,                  
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='buy_premium')]]))
+                #await query.answer("🚸 ɴᴏᴛᴇ :\nᴀᴅ-ꜰʀᴇᴇ ꜱᴇʀᴠɪᴄᴇ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴄʜᴇᴄᴋ ᴘʟᴀɴꜱ.", show_alert=True)
+                #await query.message.reply_text(
+                #text="<b>‼️ ᴡᴀɴᴛ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ?\n\n✅ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ᴇɴᴊᴏʏ ᴀᴅ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ.</b>",
+                #quote=True,
+                #disable_web_page_preview=True,                  
+                #reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='buy_premium')]]))
                 buttons = [[
-                    InlineKeyboardButton("🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=hp_link),
-                    InlineKeyboardButton("💻 Wᴀᴛᴄʜ Oɴʟɪɴᴇ 💻", url=ph_link)
-                ]]
+                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)
+                ],[
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]
 
             query.message.reply_markup = query.message.reply_markup or []
             query.message.reply_markup.inline_keyboard.pop(0)
@@ -1455,8 +1465,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     text=f"#LinkGenrated\n\nIᴅ : <code>{user_id}</code>\nUꜱᴇʀɴᴀᴍᴇ : {username}\n\nNᴀᴍᴇ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=lazy_download),
-                                                        InlineKeyboardButton('💻 Wᴀᴛᴄʜ Oɴʟɪɴᴇ 💻', url=lazy_stream)]]))  
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)],[
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]))  
         except Exception as e:
             print(e)  # print the error message
             await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
@@ -1485,6 +1501,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data="shortlink_info")
                 ],[
                     InlineKeyboardButton('💰 Buy Premium for adz Free Movies ✅', callback_data='buy_premium')
+                  ],[
+                    InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1671,6 +1689,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('🗑 ᴄᴀɴᴄᴇʟ ᴘʀᴇᴍɪᴜᴍ 🗑', callback_data='close_data')
         ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(CODE))
+        )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_text(
             text=script.PREMIUM_TXT,
@@ -2088,7 +2111,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer(MSG_ALRT)
 
         if set_type == 'is_shortlink' and query.from_user.id not in ADMINS:
-            return await query.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
+            return await query.answer(text=f"Hey {query.from_user.first_name}, c group !\n\nIt's an admin only setting !", show_alert=True)
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -2229,7 +2252,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     else:
         btn = []
@@ -2242,7 +2265,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🎬Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ🔎 Gʀᴏᴜᴘ🙋", url=GRP_LNK)
+            InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
