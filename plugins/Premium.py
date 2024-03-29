@@ -146,4 +146,4 @@ async def plan(client, message):
 
         InlineKeyboardButton("📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ", url=USERNAME)],[InlineKeyboardButton("❌ ᴄʟᴏꜱᴇ ❌", callback_data="close_data")
     ]]
-    await message.reply_photo(photo="https://graph.org/file/a36b4b70f61796cfb8d5d.jpg", caption=script.PREMIUM_TXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
+    await message.reply_photo(photo="https://graph.org/file/f96562518138b9132abf8.jpg", caption=script.PREMIUM_TXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
