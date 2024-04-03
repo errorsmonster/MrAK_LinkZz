@@ -389,7 +389,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'lazy_stream:{file_id}') #Don't change anything without contacting me @creatorrio
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
                             ]
                         ]
                     )
@@ -461,7 +461,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'lazy_stream:{file_id}') #Don't change anything without contacting me @creatorrio
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
                             ]
                         ]
                     )
@@ -526,7 +526,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'lazy_stream:{file_id}') #Don't change anything without contacting me @creatorrio
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
                     ]
                 ]
             )
