@@ -1499,7 +1499,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = []
             if await db.has_premium_access(user_id):                               
                 buttons = [[
-                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)
+                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=ph_link)
                 ], [
                             InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
                         ],[
