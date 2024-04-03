@@ -1482,6 +1482,72 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
             return
 
+    elif lazyData.startswith("generate_stream_link1"):
+        _, file_id = lazyData.split(":")
+        try:
+            user_id = query.from_user.id
+            username = query.from_user.mention 
+            log_msg = await client.send_cached_media(
+                chat_id=LOG_CHANNEL,
+                file_id=file_id,
+            )
+            fileName = {quote_plus(get_name(log_msg))}
+            lazy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            lazy_download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            hp_link = await get_shortlink(lazy_download)
+            ph_link = await get_shortlink(lazy_stream)
+            buttons = []
+            if await db.has_premium_access(user_id):                               
+                buttons = [[
+                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)
+                ], [
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]
+            else:
+                #await query.answer("🚸 ɴᴏᴛᴇ :\nᴀᴅ-ꜰʀᴇᴇ ꜱᴇʀᴠɪᴄᴇ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴄʜᴇᴄᴋ ᴘʟᴀɴꜱ.", show_alert=True)
+                #await query.message.reply_text(
+                #text="<b>‼️ ᴡᴀɴᴛ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ?\n\n✅ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ᴇɴᴊᴏʏ ᴀᴅ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ.</b>",
+                #quote=True,
+                #disable_web_page_preview=True,                  
+                #reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='buy_premium')]]))
+                buttons = [[
+                    InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=ph_link)
+                ],[
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]
+
+            query.message.reply_markup = query.message.reply_markup or []
+            query.message.reply_markup.inline_keyboard.pop(0)
+            query.message.reply_markup.inline_keyboard.insert(0, buttons)
+            await query.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+            await log_msg.reply_text(
+                    text=f"#LinkGenrated\n\nIᴅ : <code>{user_id}</code>\nUꜱᴇʀɴᴀᴍᴇ : {username}\n\nNᴀᴍᴇ : {fileName}",
+                    quote=True,
+                    disable_web_page_preview=True,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)],[
+                            InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
+                        ],[
+                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                            ],[
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
+                            ]]))  
+        except Exception as e:
+            print(e)  # print the error message
+            await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
+            return
+
+
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
 
