@@ -302,6 +302,8 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
                     ],[
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @creatorrio
+                    ],[
                         InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                     ], [
                         InlineKeyboardButton('💸 Buy Premium For Adz Free Movies ✅', callback_data='buy_premium')
@@ -324,7 +326,9 @@ async def start(client, message):
             InlineKeyboardButton('📂 Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ 📂', url=g)
         ], [
             InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
-        ], [
+        ],[
+            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @creatorrio
+        ],[
             InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
         ], [
             InlineKeyboardButton('💸 Buy Premium For Adz Free Movies ✅', callback_data="buy_premium")
