@@ -14,15 +14,9 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
-from plugins.pm_filter import get_hash, quote_plus, URL, get_name
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
-
-async def some_function(log_msg):
-    # Generate lazy_stream string
-    lazy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
@@ -389,7 +383,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @creatorrio
                             ]
                         ]
                     )
@@ -461,7 +455,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @creatorrio
                             ]
                         ]
                     )
@@ -526,7 +520,7 @@ async def start(client, message):
                             ],[
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍 𝙼𝚘𝚟𝚒𝚎𝚜', url=WRM)
                             ],[
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', url=lazy_stream) #Don't change anything without contacting me @creatorrio
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @creatorrio
                     ]
                 ]
             )
