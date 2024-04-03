@@ -14,7 +14,7 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
-from pm_filter import get_hash, quote_plus, URL, get_name
+from plugins.pm_filter import get_hash, quote_plus, URL, get_name
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
