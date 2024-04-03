@@ -1482,7 +1482,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
             return
 
-    elif lazyData.startswith("generate_stream_link1"):
+    elif lazyData.startswith("stream_link_generate"):
         _, file_id = lazyData.split(":")
         try:
             user_id = query.from_user.id
