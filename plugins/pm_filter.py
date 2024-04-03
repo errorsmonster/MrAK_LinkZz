@@ -1534,7 +1534,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     text=f"#LinkGenrated\n\nIᴅ : <code>{user_id}</code>\nUꜱᴇʀɴᴀᴍᴇ : {username}\n\nNᴀᴍᴇ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=lazy_stream)],[
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('💻 Wᴀᴛᴄʜ & Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=ph_link)],[
                             InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=TUTORIAL)
                         ],[
                                 InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
