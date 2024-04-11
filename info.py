@@ -96,11 +96,11 @@ MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
-LANGUAGES = ["malayalam", "mal", "tamil", "tam", "english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
+LANGUAGES = ["Tamil", "Tam", "Telugu", "Tel", "Kannada", "kan", "Malayalam", "Mal", "Hindi", "Hin", "English", "Eng", "Korean", "Kor", "Japanese", "Jap", "Chinese", "Chi", "Dual", "Multi"]
 
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
-QUALITIES = ["480p", "720p", "1080p", "2160p"]
+QUALITIES = ["240p", "360p", "480p", "720p", "1080p", "1440p", "2160p", "4K", "HQ", "HD",]
 
 OPENAI_API = environ.get("OPENAI_API","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")
 
